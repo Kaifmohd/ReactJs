@@ -1,0 +1,20 @@
+{
+  "name": "ep3layingfoundation",
+  "version": "1.0.0",
+  "description": "Assignment 3",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "jest"
+  },
+  "author": "Mohammed Kaif",
+  "license": "ISC",
+  "dependencies": {
+    "parcel": "^2.10.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
