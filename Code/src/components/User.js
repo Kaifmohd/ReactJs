@@ -2,6 +2,15 @@ import { useState } from "react";
 const User = ({name}) => {
     const [count,setCount] = useState(0);
     const [count2,setCount2] = useState(1);
+
+    useEffect(()=>{
+        //APi calls
+    },[]);
+
+    // async function getUserInfo(){
+    //     const data = awai
+    // }
+
     return (
         <div className="user-card">
             <h1>Count = {count}</h1>
