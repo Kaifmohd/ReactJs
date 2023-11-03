@@ -6,9 +6,9 @@ const ItemList= ({items})=>{
 
     //to use dispatch we need to use useDispatch Hook
     const dispatch = useDispatch();
-    const handleAddItem = () => {
+    const handleAddItem = (item) => {
         //dispatch an action
-        dispatch(addItem("pizza"));
+        dispatch(addItem(item));
     }
 
     return (<div>
@@ -24,7 +24,7 @@ const ItemList= ({items})=>{
                 </div>
                 <div className="w-3/12 p-4">
                 <div className="absolute">
-                <button className="p-2 mx-16 rounded-lg bg-black text-white shadow-lg" onClick={handleAddItem}> Add +</button>
+                <button className="p-2 mx-16 rounded-lg bg-black text-white shadow-lg" onClick={()=>handleAddItem(item)}> Add +</button>
                 </div>
                 <img src={CDN_URL+item?.card?.info?.imageId} />
                 </div>
